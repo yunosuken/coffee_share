@@ -1,0 +1,13 @@
+{% extends "app/common.html" %}
+{% load static %}
+{% block title %}TOP{% endblock title %}
+
+{% block content %}
+    <div class="title">Coffee Share</div>
+{#    <img class="logo" src="{% static 'app/img/coffee_logo.png' %}">#}
+    <div class="logo"></div>
+    <div class="top-btn-group">
+        <a href="{% url 'app:sign_up' %}" class="btn-sign-up">SIGN UP</a>
+        <a href="{% url 'app:sign_in' %}" class="btn-sign-in">SIGN IN</a>
+    </div>
+{% endblock content %}

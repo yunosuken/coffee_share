@@ -1,0 +1,100 @@
+/*body {*/
+/*    background-color: #FFF4E1;*/
+/*}*/
+
+/***** トップページ *****/
+.top-body {
+    background-color: #FFF4E1;
+}
+.title {
+    text-align: -webkit-center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #676F74;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.logo {
+    text-align: -webkit-center;
+    background: transparent url('/static/app/img/coffee_logo.png') 0% 0% no-repeat;
+    width: 160px;
+    height: 187px;
+    margin: auto;
+    margin-bottom: 15%;
+}
+.top-btn-group {
+    text-align: -webkit-center;
+}
+.btn-sign-in, .btn-sign-up {
+    border: 1px solid;
+    border-radius: 200px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 100px 10px 100px;
+    width: 30%;
+    display: block;
+    text-align: center;
+}
+.btn-sign-in:hover, .btn-sign-up:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.btn-sign-in {
+    background-color: #E67A7A;
+}
+.btn-sign-up {
+    background-color: #9DDCDC;
+    margin-bottom: 30px;
+}
+
+/***** サインアップページ *****/
+/*#sign-up {*/
+/*    background-color: #9DDCDC;*/
+/*}*/
+.sign-up-body {
+    background-color: #9DDCDC;
+}
+#sign-up {
+    margin: 30px;
+}
+
+#sign-up .form-label {
+    text-align: left;
+    color: #fff;
+}
+#sign-up input {
+    color: #fff;
+}
+#sign-up input::placeholder {
+    color: #fff;
+}
+#sign-up .user-name,
+#sign-up .mail-address,
+#sign-up .password{
+    border: none;
+    background-color: #9DDCDC;
+    border-bottom: 1px solid #fff;
+}
+#sign-up input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #9DDCDC inset;
+    -webkit-text-fill-color: #fff;
+}
+#sign-up .btn-sign-up {
+    background-color: #fff;
+    color: #9DDCDC;
+    margin: auto;
+}
+
+
+/*******************/
+/***** スマホ用 *****/
+/******************/
+@media only screen and (max-width: 750px) {
+    .btn-sign-in, .btn-sign-up {
+        padding: 10px 40px 10px 40px;
+        width: 80%;
+    }
+}

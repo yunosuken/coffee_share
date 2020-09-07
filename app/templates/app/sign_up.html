@@ -1,0 +1,23 @@
+{% extends "app/common.html" %}
+
+{% block title %}TOP{% endblock title %}
+
+{% block content %}
+    <div id="sign-up" class="main-content">
+        <form action="{% url 'app:user_register' %}", method="post">
+            <div class="form-group">
+                <label class="form-label">ニックネーム</label>
+                <input type="text" class="form-control user-name" name="user_name" placeholder="ニックネームを入力">
+            </div>
+            <div class="form-group">
+                <label class="form-label">メールアドレス</label>
+                <input type="email" class="form-control mail-address" name="mail_address" aria-describedby="emailHelp" placeholder="メールアドレスを入力">
+            </div>
+            <div class="form-group">
+                <label class="form-label">パスワード</label>
+                <input type="password" class="form-control password" name="password" placeholder="パスワードを入力">
+            </div>
+            <button type="submit" class="btn-sign-up">SIGN IN</button>
+        </form>
+    </div>
+{% endblock content %}
